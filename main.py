@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 
-from api.v1 import chat_router
-from integrations.redis import redis_client
+from app.api.v1 import chat_router
+from app.integrations.redis import redis_client
 
 
 @asynccontextmanager

@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends
 from redis.asyncio import Redis
 
-from integrations.openai import get_ai_service
-from integrations.redis import get_redis
-from schemas.chat import ChatRequest
-from services import AIService
-from processors.prompt_builder import PromptBuilder
+from app.integrations.openai import get_ai_service
+from app.integrations.redis import get_redis
+from app.schemas.chat import ChatRequest
+from app.services import AIService
+from app.processors.prompt_builder import PromptBuilder
 
 router = APIRouter(prefix="/chat", tags=["chat"])
 prompt_builder = PromptBuilder()

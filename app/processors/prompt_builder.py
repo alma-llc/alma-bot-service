@@ -1,4 +1,4 @@
-from prompts import BASE_SYSTEM_PROMPT
+from app.prompts import BASE_SYSTEM_PROMPT
 
 
 class PromptBuilder:

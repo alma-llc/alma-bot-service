@@ -1,7 +1,7 @@
 from openai import AsyncOpenAI
 
-from core.config import settings
-from services import AIService
+from app.core.config import settings
+from app.services import AIService
 
 
 openai_client = AsyncOpenAI(
