@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     openai_url: str
     openai_model: str
 
+    qdrant_url: str
+
     redis_host: str = "localhost"
     redis_port: int = 6379
     redis_db: int = 0

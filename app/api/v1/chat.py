@@ -14,7 +14,6 @@ prompt_builder = PromptBuilder()
 @router.post("/")
 async def chat_message(
     request: ChatRequest,
-    redis: Redis = Depends(get_redis),
     ai_service: AIService = Depends(get_ai_service)
 ):
     ai_response = await ai_service.generate_reply(
